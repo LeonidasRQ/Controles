@@ -4,26 +4,12 @@
              x:Class="Controles.MainPage">
 
     <StackLayout>
-       <ActivityIndicator Color="Red"
-                           IsRunning="True"/>
-        <BoxView Color="Blue"/>
-        <Button Text="Click Here"
-                TextColor="Red"
-                FontSize="Large"
-                FontAttributes="Bold"
-                BackgroundColor="Black"
-                BorderWidth="2"
-                Clicked="Button_Clicked"/>
-
-        <DatePicker x:Name="dtp"
-                    Format="dd/MM/yyyy"/>
-
-        <Entry IsPassword="False"
-               Placeholder="Cedula"
-               TextColor="Blue"
-               FontSize="Large"
-               Completed="Entry_Completed"
-               TextChanged="Entry_TextChanged"/>
+        <Label VerticalOptions="Center"
+               Text="Hola Mundo"
+               TextColor="Red"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Blue"/>
     </StackLayout>
 
 </ContentPage>
