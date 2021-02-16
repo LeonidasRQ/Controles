@@ -7,7 +7,7 @@
        <ActivityIndicator Color="Red"
                            IsRunning="True"/>
         <BoxView Color="Blue"/>
-        <Button Text="Click"
+        <Button Text="Click Here"
                 TextColor="Red"
                 FontSize="Large"
                 FontAttributes="Bold"
