@@ -10,6 +10,15 @@
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
                BackgroundColor="Blue"/>
+        <Picker x:Name ="picker"
+                Title="Escoge una persona"
+                TextColor="Red">
+            <Picker.Items>
+                <x:String>Maria</x:String>
+                <x:String>José</x:String>
+                <x:String>Pedro</x:String>
+            </Picker.Items>
+        </Picker>
     </StackLayout>
 
 </ContentPage>
