@@ -3,27 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Controles.MainPage">
 
-    <StackLayout>
-       <ActivityIndicator Color="Red"
-                           IsRunning="True"/>
-        <BoxView Color="Blue"/>
-        <Button Text="Click"
-                TextColor="Red"
-                FontSize="Large"
-                FontAttributes="Bold"
-                BackgroundColor="Black"
-                BorderWidth="2"
-                Clicked="Button_Clicked"/>
+    <StackLayout Margin="10"
+                 BackgroundColor="BlanchedAlmond"
+                 Padding="50">
+
+        <Label Text="Formulario de Prueba"
+               FontSize="Large"
+               TextColor="Black"/>
+        
+        <Entry x:Name="Nombre"
+               Placeholder="Nombre"
+               FontSize="Medium"/>
+
+        <Entry x:Name="Apellido"
+               Placeholder="Apellidos"
+               FontSize="Medium"/>
 
         <DatePicker x:Name="dtp"
                     Format="dd/MM/yyyy"/>
+        
+        <Entry x:Name="Email"
+               Placeholder="Email"
+               FontSize="Medium"
+               Keyboard="Email"/>
 
-        <Entry IsPassword="False"
-               Placeholder="Cedula"
-               TextColor="Blue"
-               FontSize="Large"
-               Completed="Entry_Completed"
-               TextChanged="Entry_TextChanged"/>
+        <Entry x:Name="Edad"
+               Placeholder="Edad"
+               FontSize="Medium"
+               Keyboard="Numeric"/>
+
+        <Entry x:Name="Celular"
+               Placeholder="Celular"
+               FontSize="Medium"
+               Keyboard="Telephone"/>
+        
+        <Entry x:Name="Pais_Residencia"
+               Placeholder="País de Residencia"
+               FontSize="Medium"/>
+
+        <Button Text="Submit"
+                FontSize="Large"
+                FontAttributes="Bold"
+                BackgroundColor="GhostWhite"
+                BorderWidth="2"
+                Clicked="Button_Clicked"/>
     </StackLayout>
 
 </ContentPage>

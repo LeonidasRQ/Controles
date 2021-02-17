@@ -25,17 +25,8 @@ namespace Controles
         }
 
         private void Button_Clicked(object sender, EventArgs e) {
-            DisplayAlert("Saludo", "Hola como estás?", "Cerrar");
+            DisplayAlert("Aviso", "Sus datos se han registrado correctamente", "Aceptar");
         }
 
-        private void Entry_Completed(object sender, EventArgs e)
-        {
-            DisplayAlert("Completed", "Texto Completado", "Cerrar");
-        }
-
-        private void Entry_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            DisplayAlert("TextChanged", "Cambio", "Cerrar");
-        }
     }
 }
