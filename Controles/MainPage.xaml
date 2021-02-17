@@ -12,13 +12,32 @@
                BackgroundColor="Blue"/>
         <Picker x:Name ="picker"
                 Title="Escoge una persona"
-                TextColor="Red">
+                TextColor="Red"
+                SelectedIndexChanged="picker_SelectedIndexChanged">
             <Picker.Items>
                 <x:String>Maria</x:String>
                 <x:String>José</x:String>
                 <x:String>Pedro</x:String>
             </Picker.Items>
         </Picker>
+
+        <ProgressBar x:Name="progres"
+                     Progress=".5"/>
+
+        <Button x:Name="btnSimulador"
+                Text="Simulador"
+                Clicked="btnSimulador_Clicked"/>
+
+        <SearchBar x:Name="Buscar"
+                   Placeholder="Buscar..."
+                   CancelButtonColor="Red"
+                   SearchButtonPressed="Buscar_SearchButtonPressed"/>
+
+        <Slider x:Name="Slider"
+                Maximum="200"
+                Minimum="100"
+                Value="150"/>
+
     </StackLayout>
 
 </ContentPage>
